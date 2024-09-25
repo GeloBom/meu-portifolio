@@ -1,0 +1,27 @@
+<nav class="sticky-top navbar navbar-expand-lg app-background-escuro">
+  <div class="container py-1">
+    <a class="navbar-brand fw-semibold" href="#">Luiz Gustavo H. Santos</a>
+    <button
+      (click)="colapsarNavBar = !colapsarNavBar"
+      class="navbar-toggler"
+      type="button"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="collapse navbar-collapse"
+      [ngClass]="colapsarNavBar ? 'show' : ''"
+    >
+      <div class="navbar-nav ms-auto">
+        <a
+          *ngFor="let link of linksNavBar"
+          class="nav-link active"
+          aria-current="page"
+          [href]="link.href"
+        >{{link.texto}}</a>
+      </div>
+    </div>
+  </div>
+</nav>
