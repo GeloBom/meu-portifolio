@@ -102,7 +102,7 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "baseHref": "",
+            "baseHref": "https://gelobom.github.io/meu-portifolio/",
             "repo": "https://github.com/GeloBom/meu-portifolio.git"
           }
         }
